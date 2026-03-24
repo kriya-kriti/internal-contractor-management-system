@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Requirement Request Application</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #ffffff;
+            margin: 0;
+            padding: 0;
+            color: #000000;
+        }
+        .header {
+            background-color: #d9ecff;
+            padding: 15px;
+            text-align: center;
+            font-size: 22px;
+            font-weight: bold;
+        }
+        .container {
+            padding: 20px 40px;
+        }
+        .section-title {
+            font-size: 16px;
+            font-weight: bold;
+            margin-top: 25px;
+            margin-bottom: 10px;
+        }
+        label {
+            display: block;
+            margin-top: 12px;
+            font-size: 14px;
+        }
+        input, textarea, select {
+            width: 100%;
+            padding: 8px;
+            margin-top: 4px;
+            border: 1px solid #999;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+        textarea {
+            height: 80px;
+        }
+        .button-container {
+            margin-top: 30px;
+            text-align: center;
+        }
+        button {
+            padding: 10px 25px;
+            font-size: 14px;
+            border: none;
+            background-color: #000000;
+            color: #ffffff;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    Requirement Request Application
+</div>
+
+<div class="container">
+
+    <div class="section-title">Basic Requirement Information</div>
+    <label>Department</label>
+    <input type="text">
+
+    <label>Project / Team Name</label>
+    <input type="text">
+
+    <label>Hiring Manager Name</label>
+    <input type="text">
+
+    <label>Priority</label>
+    <select>
+        <option>High</option>
+        <option>Medium</option>
+        <option>Low</option>
+    </select>
+
+    <div class="section-title">Job Requirement Details</div>
+    <label>Job Title</label>
+    <input type="text">
+
+    <label>Number of Openings</label>
+    <input type="number">
+
+    <label>Job Type</label>
+    <select>
+        <option>Full Time</option>
+        <option>Contract</option>
+        <option>Intern</option>
+    </select>
+
+    <label>Work Location</label>
+    <input type="text">
+
+    <div class="section-title">Skills & Experience</div>
+    <label>Mandatory Skills</label>
+    <textarea></textarea>
+
+    <label>Good to Have Skills</label>
+    <textarea></textarea>
+
+    <label>Minimum Experience (Years)</label>
+    <input type="number">
+
+    <label>Maximum Experience (Years)</label>
+    <input type="number">
+
+    <div class="section-title">Role Expectations</div>
+    <label>Key Responsibilities</label>
+    <textarea></textarea>
+
+    <label>Special Requirements or Notes</label>
+    <textarea></textarea>
+
+    <div class="section-title">Timeline</div>
+    <label>Expected Joining Date</label>
+    <input type="date">
+
+    <div class="button-container">
+        <button type="submit">Submit Requirement</button>
+    </div>
+
+</div>
+
+</body>
+</html>
