@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Interview Feedback Form</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #ffffff;
+            margin: 0;
+            padding: 0;
+            color: #000000;
+        }
+        .header {
+            background-color: #d9ecff;
+            padding: 15px;
+            text-align: center;
+            font-size: 22px;
+            font-weight: bold;
+        }
+        .container {
+            padding: 20px 40px;
+        }
+        .section-title {
+            font-size: 16px;
+            font-weight: bold;
+            margin-top: 25px;
+            margin-bottom: 10px;
+        }
+        label {
+            display: block;
+            margin-top: 12px;
+            font-size: 14px;
+        }
+        input, textarea, select {
+            width: 100%;
+            padding: 8px;
+            margin-top: 4px;
+            border: 1px solid #999;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+        textarea {
+            height: 80px;
+        }
+        .rating {
+            width: 80px;
+        }
+        .button-container {
+            margin-top: 30px;
+            text-align: center;
+        }
+        button {
+            padding: 10px 25px;
+            font-size: 14px;
+            border: none;
+            background-color: #000000;
+            color: #ffffff;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    Interview Feedback Form
+</div>
+
+<div class="container">
+
+    <div class="section-title">Candidate Information</div>
+    <label>Candidate Name</label>
+    <input type="text">
+
+    <label>Candidate ID</label>
+    <input type="text">
+
+    <label>Job Title Applied For</label>
+    <input type="text">
+
+    <label>Interview Date</label>
+    <input type="date">
+
+    <div class="section-title">Technical Evaluation (Rate 1 to 10)</div>
+
+    <label>Design Verification Knowledge</label>
+    <input class="rating" type="number" min="1" max="10">
+
+    <label>RTL Design Understanding</label>
+    <input class="rating" type="number" min="1" max="10">
+
+    <label>Physical Design Concepts</label>
+    <input class="rating" type="number" min="1" max="10">
+
+    <label>Chip Manufacturing Flow Knowledge</label>
+    <input class="rating" type="number" min="1" max="10">
+
+    <label>Timing Analysis and Debugging</label>
+    <input class="rating" type="number" min="1" max="10">
+
+    <div class="section-title">Overall Assessment</div>
+
+    <label>Problem Solving Ability (1 to 10)</label>
+    <input class="rating" type="number" min="1" max="10">
+
+    <label>Communication Skills (1 to 10)</label>
+    <input class="rating" type="number" min="1" max="10">
+
+    <label>Experience Level as Felt by Interviewer (1 to 10)</label>
+    <input class="rating" type="number" min="1" max="10">
+
+    <div class="section-title">Feedback Summary</div>
+
+    <label>Strengths</label>
+    <textarea></textarea>
+
+    <label>Areas for Improvement</label>
+    <textarea></textarea>
+
+    <label>Additional Interviewer Comments</label>
+    <textarea></textarea>
+
+    <div class="section-title">Final Recommendation</div>
+
+    <label>Recommendation</label>
+    <select>
+        <option>Strong Hire</option>
+        <option>Hire</option>
+        <option>Hold</option>
+        <option>Reject</option>
+    </select>
+
+    <div class="button-container">
+        <button type="submit">Submit Feedback</button>
+    </div>
+
+</div>
+
+</body>
+</html>
